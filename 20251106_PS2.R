@@ -123,7 +123,7 @@ vis_scatter_deforestation =
   scale_x_continuous(breaks = c(-2.00, -1.20, -0.20)) +
   theme_minimal()
 
-vis_deforestation = vis_scatter_deforestation + vis_scatter_2
+vis_deforestation = vis_scatter_deforestation / vis_scatter_2
 
 ggsave("out/20251106_PS2_2.png",
        dpi = 300,
